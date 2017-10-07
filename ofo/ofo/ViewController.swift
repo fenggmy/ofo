@@ -45,7 +45,8 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        let x = view.bounds.height
+//        print(x)
         mapView = MAMapView(frame: view.bounds)
         view.addSubview(mapView)
         view.addSubview(panelView)

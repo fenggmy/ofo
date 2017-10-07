@@ -10,26 +10,32 @@
 		01A80E654E66B3ADD72AE72D /* Pods_ofo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9538F1626E1A3EA957CCBFC /* Pods_ofo.framework */; };
 		9965677A1F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 996567791F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx */; };
 		9965677C1F87C059003BCF68 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */; };
+		99BB03051F89037B004EE858 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03041F89037B004EE858 /* ColorTools.swift */; };
+		99BB030C1F892019004EE858 /* InputNumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03071F8918DF004EE858 /* InputNumController.swift */; };
+		99BB030D1F892019004EE858 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03081F8918DF004EE858 /* MenuController.swift */; };
+		99BB030E1F892019004EE858 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03091F8918DF004EE858 /* ScanController.swift */; };
+		99BB030F1F892019004EE858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB030A1F8918DF004EE858 /* ViewController.swift */; };
+		99BB03101F892019004EE858 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB030B1F8918DF004EE858 /* WebViewController.swift */; };
 		99E898611F8690DE006E6F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E898601F8690DE006E6F77 /* AppDelegate.swift */; };
-		99E898631F8690DE006E6F77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E898621F8690DE006E6F77 /* ViewController.swift */; };
 		99E898681F8690DE006E6F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99E898671F8690DE006E6F77 /* Assets.xcassets */; };
 		99E8986B1F8690DE006E6F77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E898691F8690DE006E6F77 /* LaunchScreen.storyboard */; };
-		99E898761F872CD1006E6F77 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E898751F872CD1006E6F77 /* WebViewController.swift */; };
-		99E898781F8751B8006E6F77 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E898771F8751B8006E6F77 /* MenuController.swift */; };
 		99E898861F877ADD006E6F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99E898841F877ADD006E6F77 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		996567791F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx"; sourceTree = "<group>"; };
 		9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
+		99BB03041F89037B004EE858 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
+		99BB03071F8918DF004EE858 /* InputNumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNumController.swift; sourceTree = "<group>"; };
+		99BB03081F8918DF004EE858 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		99BB03091F8918DF004EE858 /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
+		99BB030A1F8918DF004EE858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99BB030B1F8918DF004EE858 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		99E8985D1F8690DE006E6F77 /* ofo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E898601F8690DE006E6F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		99E898621F8690DE006E6F77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		99E898671F8690DE006E6F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99E8986A1F8690DE006E6F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99E8986C1F8690DE006E6F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		99E898751F872CD1006E6F77 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		99E898771F8751B8006E6F77 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		99E898791F875564006E6F77 /* ofo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofo-Bridging-Header.h"; sourceTree = "<group>"; };
 		99E898851F877ADD006E6F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9538F1626E1A3EA957CCBFC /* Pods_ofo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ofo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,16 +77,19 @@
 		99E8985F1F8690DE006E6F77 /* ofo */ = {
 			isa = PBXGroup;
 			children = (
+				99E898791F875564006E6F77 /* ofo-Bridging-Header.h */,
+				99E8986C1F8690DE006E6F77 /* Info.plist */,
 				99E898601F8690DE006E6F77 /* AppDelegate.swift */,
-				99E898621F8690DE006E6F77 /* ViewController.swift */,
+				99BB03041F89037B004EE858 /* ColorTools.swift */,
+				99BB03071F8918DF004EE858 /* InputNumController.swift */,
+				99BB03081F8918DF004EE858 /* MenuController.swift */,
+				99BB03091F8918DF004EE858 /* ScanController.swift */,
+				99BB030A1F8918DF004EE858 /* ViewController.swift */,
+				99BB030B1F8918DF004EE858 /* WebViewController.swift */,
 				9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */,
-				99E898751F872CD1006E6F77 /* WebViewController.swift */,
-				99E898771F8751B8006E6F77 /* MenuController.swift */,
-				99E898841F877ADD006E6F77 /* Main.storyboard */,
 				99E898671F8690DE006E6F77 /* Assets.xcassets */,
 				99E898691F8690DE006E6F77 /* LaunchScreen.storyboard */,
-				99E8986C1F8690DE006E6F77 /* Info.plist */,
-				99E898791F875564006E6F77 /* ofo-Bridging-Header.h */,
+				99E898841F877ADD006E6F77 /* Main.storyboard */,
 			);
 			path = ofo;
 			sourceTree = "<group>";
@@ -224,11 +233,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ofo/Pods-ofo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/APNumberPad/APNumberPad.framework",
 				"${BUILT_PRODUCTS_DIR}/FTIndicator/FTIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APNumberPad.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
 			);
@@ -244,11 +255,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99E898781F8751B8006E6F77 /* MenuController.swift in Sources */,
+				99BB030D1F892019004EE858 /* MenuController.swift in Sources */,
 				9965677C1F87C059003BCF68 /* MyPinAnnotation.swift in Sources */,
-				99E898631F8690DE006E6F77 /* ViewController.swift in Sources */,
-				99E898761F872CD1006E6F77 /* WebViewController.swift in Sources */,
+				99BB03051F89037B004EE858 /* ColorTools.swift in Sources */,
 				99E898611F8690DE006E6F77 /* AppDelegate.swift in Sources */,
+				99BB030F1F892019004EE858 /* ViewController.swift in Sources */,
+				99BB030E1F892019004EE858 /* ScanController.swift in Sources */,
+				99BB030C1F892019004EE858 /* InputNumController.swift in Sources */,
+				99BB03101F892019004EE858 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
