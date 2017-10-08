@@ -70,7 +70,7 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     //:左下角功能键的定制
     func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder & UITextInput) {
         print("你点了我")
-        
+        checkPass()
         
     }
     

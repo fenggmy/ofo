@@ -31,7 +31,8 @@ class disPlayController: UIViewController {
          没有导航，就dismiss，返回上一级控制器
          有导航，就POP，返回上一级控制器
          */
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
+//        dismiss(animated: true, completion: nil)
     }
     @IBOutlet weak var countDownLabel: UILabel!
     override func viewDidLoad() {
