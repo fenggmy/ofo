@@ -16,6 +16,9 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     let defaults = UserDefaults.standard
     
     
+    @IBAction func goBtnTap(_ sender: UIButton) {
+        checkPass()
+    }
     @IBOutlet weak var goBtn: UIButton!
     @IBAction func scanBtnTap(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
@@ -67,9 +70,7 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     //:左下角功能键的定制
     func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder & UITextInput) {
         print("你点了我")
-        if !inputTextField.text!.isEmpty {
-            performSegue(withIdentifier: "showPasscode", sender: self)
-        }
+        
         
     }
     
@@ -93,7 +94,11 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
         return newLength <= 8
         
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        
+        //:将“获取解锁码”界面的左边返回按钮的title设置为空
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //:使虚拟键盘回收，不再作为第一消息响应者
@@ -104,7 +109,28 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
         // Dispose of any resources that can be recreated.
     }
     
+    var passcodeArray : [String] = []
 
+    func checkPass() {
+        if !inputTextField.text!.isEmpty {
+            let code = inputTextField.text!
+            
+            NetworkTools.getPasscode(code: code, completion: { (passcode) in
+                if let passcode = passcode {
+                    //:"9999" -> ["9","9","9","9"]
+                    self.passcodeArray = passcode.characters.map{
+                        return $0.description
+                    }
+                    self.performSegue(withIdentifier: "showPasscode", sender: self)
+                }else{
+                    print("无此车牌号")
+                    self.performSegue(withIdentifier: "showErrorView", sender: self)
+                }
+            })
+            
+            
+        }
+    }
     
     // MARK: - Navigation
 
@@ -112,21 +138,7 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showPasscode" {
             let destVC = segue.destination as! disPlayController
-            let code = inputTextField.text!
-            
-            destVC.code = code
-            NetworkTools.getPasscode(code: code, completion: { (passcode) in
-                if let passcode = passcode {
-                    //:"9999" -> ["9","9","9","9"]
-                    destVC.passcodeArray = passcode.characters.map{
-                        
-                        return $0.description
-                        
-                    }
-                }else{
-                    print("无此车牌号")
-                }
-            })
+            destVC.passcodeArray = self.passcodeArray
             
         }
     }

@@ -19,25 +19,12 @@ class disPlayController: UIViewController {
     @IBOutlet weak var label_th: MyPreviewLabel!
     //:车牌以及解锁码
     var code = ""
-    var passcodeArray : [String] = [] {
-        //:属性监视器
-        didSet{
-            self.label_st.text = passcodeArray[0]
-            self.label_rd.text = passcodeArray[1]
-            self.label_3rd.text = passcodeArray[2]
-            self.label_th.text = passcodeArray[3]
-            
-        }
-    }
+    var passcodeArray : [String] = [] 
     
     var remindSeconds = 121
     var isTorchOn = true
     var isVoiceOn = true
-    let defaults = UserDefaults.standard
-    
-    @IBAction func backItemTap(_ sender: UIBarButtonItem) {
-        dismiss(animated: true, completion: nil)
-    }
+//    let defaults = UserDefaults.standard
     
     @IBAction func reportBtnTap(_ sender: UIButton) {
         /*
@@ -50,6 +37,7 @@ class disPlayController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "获取解锁码"
         Timer.every(1) { (timer : Timer) in
             self.remindSeconds -= 1
            self.countDownLabel.text = self.remindSeconds.description
@@ -58,7 +46,10 @@ class disPlayController: UIViewController {
             }
         }
         Sound.play(file: "您的解锁码为_D.m4a")
-        
+        self.label_st.text = passcodeArray[0]
+        self.label_rd.text = passcodeArray[1]
+        self.label_3rd.text = passcodeArray[2]
+        self.label_th.text = passcodeArray[3]
     }
 
     override func didReceiveMemoryWarning() {

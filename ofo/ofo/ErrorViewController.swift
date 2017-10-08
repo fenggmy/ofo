@@ -11,6 +11,9 @@ import MIBlurPopup
 
 class ErrorViewController: UIViewController {
 
+    @IBAction func gestureTap(_ sender: UITapGestureRecognizer) {
+        self.close()
+    }
     @IBOutlet weak var myPopView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
