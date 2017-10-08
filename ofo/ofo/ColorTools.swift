@@ -7,7 +7,7 @@
 //
 
 extension UIColor{
-    //:UIColor(red: 247/255, green: 215/255, blue: 80/255, alpha: 1)
+    //:UIColor(red: 247/255, green: 215/255, blue: 80/255, alpha: 1) F7D750
     static var ofo : UIColor{
         return UIColor(red: 247/255, green: 215/255, blue: 80/255, alpha: 1)
     }

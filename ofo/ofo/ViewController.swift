@@ -18,7 +18,9 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     var nearBySearch = true
     var start,end : CLLocationCoordinate2D!
     var walkManager : AMapNaviWalkManager!
-
+    
+    
+    
     @IBOutlet weak var panelView: UIView!
     @IBAction func locationBtnTap(_ sender: UIButton) {
         nearBySearch = true
@@ -40,8 +42,6 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         search.aMapPOIAroundSearch(request)
         
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

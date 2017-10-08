@@ -13,6 +13,8 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
 
     var isFlashOn = true
     var isVoiceOn = true
+    let defaults = UserDefaults.standard
+    
     
     @IBOutlet weak var goBtn: UIButton!
     @IBAction func scanBtnTap(_ sender: UIButton) {
@@ -20,18 +22,22 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     }
     @IBOutlet weak var scanBtn: UIButton!
     @IBAction func voiceBtnTap(_ sender: UIButton) {
+        defaults.set(true, forKey: "isVoiceOn")
         
-        isVoiceOn = !isVoiceOn
         if isVoiceOn {
-            voiceBtn.setImage(#imageLiteral(resourceName: "voice_icon"), for: .normal)
-        } else {
             voiceBtn.setImage(#imageLiteral(resourceName: "voice_close"), for: .normal)
+            defaults.set(false, forKey: "isVoiceOn")
+            
+        } else {
+            voiceBtn.setImage(#imageLiteral(resourceName: "voice_icon"), for: .normal)
+            defaults.set(true, forKey: "isVoiceOn")
         }
-        
+        isVoiceOn = !isVoiceOn
     }
     @IBOutlet weak var voiceBtn: UIButton!
     @IBAction func flashBtnTap(_ sender: UIButton) {
-        
+        turnTorch()
+
         if isFlashOn {
             flashBtn.setImage(#imageLiteral(resourceName: "btn_enableTorch_w"), for: .normal)
         } else {
@@ -46,21 +52,28 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
 
         title = "车辆解锁"
         //:247 215 80
-        inputTextField.layer.borderWidth = 2
-        inputTextField.layer.borderColor = UIColor.ofo.cgColor
+//        inputTextField.layer.borderWidth = 2
+//        inputTextField.layer.borderColor = UIColor.ofo.cgColor
         
         let numberPad = APNumberPad(delegate: self)
         numberPad.leftFunctionButton.setTitle("确定", for: .normal)
         inputTextField.inputView = numberPad
         inputTextField.delegate = self
+        
+        goBtn.isEnabled = false
+        
     }
 
     //:左下角功能键的定制
     func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder & UITextInput) {
         print("你点了我")
+        if !inputTextField.text!.isEmpty {
+            performSegue(withIdentifier: "showPasscode", sender: self)
+        }
+        
     }
     
-    //:限制输入数字位数为4
+    //:限制输入数字位数为8
     
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         guard let textField = inputTextField.text else {
@@ -69,14 +82,15 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
         let newLength = textField.characters.count + string.characters.count - range.length
         
         if newLength > 0 {
-            goBtn.setImage(#imageLiteral(resourceName: "nextArrow_enable"), for: .normal)
+            goBtn.setImage(#imageLiteral(resourceName: "1"), for: .normal)
             goBtn.backgroundColor = UIColor.ofo
+            goBtn.isEnabled = true
         } else {
             goBtn.setImage(#imageLiteral(resourceName: "nextArrow_unenable"), for: .normal)
             goBtn.backgroundColor = UIColor.groupTableViewBackground
-            
+            goBtn.isEnabled = false
         }
-        return newLength <= 4
+        return newLength <= 8
         
     }
     
