@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01A80E654E66B3ADD72AE72D /* Pods_ofo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9538F1626E1A3EA957CCBFC /* Pods_ofo.framework */; };
 		991F84911F89D852006648AF /* UIViewTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F84901F89D852006648AF /* UIViewTools.swift */; };
+		991F84A51F8A410D006648AF /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F84A41F8A410D006648AF /* NetworkTools.swift */; };
+		991F84A71F8A62C0006648AF /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F84A61F8A62C0006648AF /* ErrorViewController.swift */; };
 		9965677A1F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 996567791F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx */; };
 		9965677C1F87C059003BCF68 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */; };
 		99BB03051F89037B004EE858 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03041F89037B004EE858 /* ColorTools.swift */; };
@@ -41,6 +43,8 @@
 		991F84A11F89EAAA006648AF /* 您的解锁码为_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "您的解锁码为_D.m4a"; sourceTree = "<group>"; };
 		991F84A21F89EAAA006648AF /* 骑行结束_D.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束_D.m4a"; sourceTree = "<group>"; };
 		991F84A31F89EAAA006648AF /* 骑行结束_LH.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束_LH.m4a"; sourceTree = "<group>"; };
+		991F84A41F8A410D006648AF /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		991F84A61F8A62C0006648AF /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		996567791F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx"; sourceTree = "<group>"; };
 		9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
 		99BB03041F89037B004EE858 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
@@ -122,10 +126,12 @@
 				99E8986C1F8690DE006E6F77 /* Info.plist */,
 				99E898601F8690DE006E6F77 /* AppDelegate.swift */,
 				99BB03041F89037B004EE858 /* ColorTools.swift */,
+				991F84A41F8A410D006648AF /* NetworkTools.swift */,
 				991F84901F89D852006648AF /* UIViewTools.swift */,
 				99BB03071F8918DF004EE858 /* InputNumController.swift */,
 				99BB03131F892D23004EE858 /* MenuController.swift */,
 				99BB031C1F893D50004EE858 /* disPlayController.swift */,
+				991F84A61F8A62C0006648AF /* ErrorViewController.swift */,
 				99BB03141F892D23004EE858 /* ScanController.swift */,
 				99BB03161F892D23004EE858 /* WebViewController.swift */,
 				99BB030A1F8918DF004EE858 /* ViewController.swift */,
@@ -278,7 +284,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ofo/Pods-ofo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APNumberPad/APNumberPad.framework",
+				"${BUILT_PRODUCTS_DIR}/AVOSCloud/AVOSCloud.framework",
 				"${BUILT_PRODUCTS_DIR}/FTIndicator/FTIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/MIBlurPopup/MIBlurPopup.framework",
 				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyTimer/SwiftyTimer.framework",
@@ -286,7 +294,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/APNumberPad.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AVOSCloud.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FTIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MIBlurPopup.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyTimer.framework",
@@ -304,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				991F84911F89D852006648AF /* UIViewTools.swift in Sources */,
+				991F84A71F8A62C0006648AF /* ErrorViewController.swift in Sources */,
+				991F84A51F8A410D006648AF /* NetworkTools.swift in Sources */,
 				9965677C1F87C059003BCF68 /* MyPinAnnotation.swift in Sources */,
 				99BB03181F892D44004EE858 /* WebViewController.swift in Sources */,
 				99BB031A1F892D44004EE858 /* ScanController.swift in Sources */,

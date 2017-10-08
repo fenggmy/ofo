@@ -13,9 +13,22 @@ import FTIndicator
 
 class disPlayController: UIViewController {
     
+    @IBOutlet weak var label_st: MyPreviewLabel!
+    @IBOutlet weak var label_rd: MyPreviewLabel!
+    @IBOutlet weak var label_3rd: MyPreviewLabel!
+    @IBOutlet weak var label_th: MyPreviewLabel!
     //:车牌以及解锁码
-    var code = 0
-    var passcode = 0
+    var code = ""
+    var passcodeArray : [String] = [] {
+        //:属性监视器
+        didSet{
+            self.label_st.text = passcodeArray[0]
+            self.label_rd.text = passcodeArray[1]
+            self.label_3rd.text = passcodeArray[2]
+            self.label_th.text = passcodeArray[3]
+            
+        }
+    }
     
     var remindSeconds = 121
     var isTorchOn = true

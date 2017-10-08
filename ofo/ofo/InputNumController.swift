@@ -105,14 +105,31 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "showPasscode" {
+            let destVC = segue.destination as! disPlayController
+            let code = inputTextField.text!
+            
+            destVC.code = code
+            NetworkTools.getPasscode(code: code, completion: { (passcode) in
+                if let passcode = passcode {
+                    //:"9999" -> ["9","9","9","9"]
+                    destVC.passcodeArray = passcode.characters.map{
+                        
+                        return $0.description
+                        
+                    }
+                }else{
+                    print("无此车牌号")
+                }
+            })
+            
+        }
     }
-    */
+    
 
 }

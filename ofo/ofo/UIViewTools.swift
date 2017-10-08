@@ -38,6 +38,9 @@ extension UIView{
 @IBDesignable class MyPreviewLabel : UILabel{
     
 }
+@IBDesignable class MyPreviewButton : UIButton{
+    
+}
 
 import AVFoundation
 func turnTorch()  {
@@ -54,29 +57,6 @@ func turnTorch()  {
         }
         
         device.unlockForConfiguration()
-    }
-}
-
-//import SwiftySound
-
-func voiceBtnStatus(voiceBtn : UIButton)  {
-    let defaults = UserDefaults.standard
-    
-    if defaults.bool(forKey: "isVoiceOn") {
-       // Sound.play(file: "上车前_LH.m4a")
-        voiceBtn.setImage(#imageLiteral(resourceName: "voice_icon"), for: .normal)
-    }else{
-        voiceBtn.setImage(#imageLiteral(resourceName: "voice_close"), for: .normal)
-    }
-}
-
-func torchBtnStatus(torchBtn : UIButton)  {
-    let defaults_torch = UserDefaults.standard
-    if defaults_torch.bool(forKey: "isVoiceOn") {
-        // Sound.play(file: "上车前_LH.m4a")
-        torchBtn.setImage(#imageLiteral(resourceName: "btn_enableTorch_w"), for: .normal)
-    }else{
-        torchBtn.setImage(#imageLiteral(resourceName: "btn_torch_disable"), for: .normal)
     }
 }
 

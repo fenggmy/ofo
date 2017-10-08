@@ -9,3 +9,5 @@
 #import <MAMapKit/MAMapKit.h>
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
+
+#import <AVOSCloud/AVOSCloud.h>
