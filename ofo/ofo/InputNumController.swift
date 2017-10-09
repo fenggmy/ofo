@@ -110,11 +110,13 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
     }
     
     var passcodeArray : [String] = []
-
+    var code_Num = ""
+    
     func checkPass() {
         if !inputTextField.text!.isEmpty {
             let code = inputTextField.text!
-            
+            //:给显示车牌号的label赋值
+            code_Num = code
             NetworkTools.getPasscode(code: code, completion: { (passcode) in
                 if let passcode = passcode {
                     //:"9999" -> ["9","9","9","9"]
@@ -139,7 +141,8 @@ class InputNumController: UIViewController,APNumberPadDelegate,UITextFieldDelega
         if segue.identifier == "showPasscode" {
             let destVC = segue.destination as! disPlayController
             destVC.passcodeArray = self.passcodeArray
-            
+            //:将车牌号传递给下一个界面用于label的显示
+            destVC.code = self.code_Num
         }
     }
     

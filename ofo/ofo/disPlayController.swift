@@ -13,6 +13,7 @@ import FTIndicator
 
 class disPlayController: UIViewController {
     
+    @IBOutlet weak var unlockNumLabel: UILabel!
     @IBOutlet weak var label_st: MyPreviewLabel!
     @IBOutlet weak var label_rd: MyPreviewLabel!
     @IBOutlet weak var label_3rd: MyPreviewLabel!
@@ -51,6 +52,8 @@ class disPlayController: UIViewController {
         self.label_rd.text = passcodeArray[1]
         self.label_3rd.text = passcodeArray[2]
         self.label_th.text = passcodeArray[3]
+        
+        self.unlockNumLabel.text = "NO." + code + "的解锁码"
     }
 
     override func didReceiveMemoryWarning() {
