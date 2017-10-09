@@ -10,12 +10,10 @@ import UIKit
 
 class sideBarController: UIViewController {
 
-    @IBOutlet weak var userInfo: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.addSubview(userInfo)
         // Do any additional setup after loading the view.
     }
 
