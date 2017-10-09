@@ -8,11 +8,11 @@
 
 import UIKit
 
+
 class MenuController: UITableViewController {
 
-    @IBOutlet weak var creditLabel: UILabel!
-    @IBOutlet weak var certLabel: UILabel!
-    @IBOutlet weak var certImageView: UIImageView!
+    //var staticTabelViewCon : MenuController
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,13 +78,16 @@ class MenuController: UITableViewController {
     */
 
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     if segue.identifier == "staticTableViewController" && segue.destination .isKind(of: MenuController.self) {
+     
+     }
+     }
+     */
+    
+    
 
 }

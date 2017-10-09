@@ -45,11 +45,12 @@ extension UIView{
 import AVFoundation
 func turnTorch()  {
     guard let device = AVCaptureDevice.default(for : AVMediaType.video) else {
+        print("初始化出错")
         return
     }
     if device.hasTorch && device.isTorchAvailable {
         try?device.lockForConfiguration()
-        
+        //print("后置摄像头正常工作")
         if device.torchMode == .off{
             device.torchMode = .on
         }else{
@@ -58,5 +59,14 @@ func turnTorch()  {
         
         device.unlockForConfiguration()
     }
+        /*
+     else if !device.hasTorch{
+     print("无后置摄像头")
+     }
+     else if !device.isTorchAvailable{
+     print("后置摄像头被其他程序占用")
+     }
+         */
+    
 }
 

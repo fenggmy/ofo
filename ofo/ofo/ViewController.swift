@@ -70,7 +70,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         
         if let revealVC = revealViewController() {
             
-            revealVC.rearViewRevealWidth = 330
+            revealVC.rearViewRevealWidth = self.view.bounds.width * 0.85
             
             navigationItem.leftBarButtonItem?.target = revealVC
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
@@ -307,6 +307,12 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         //:第三方的提示功能
         FTIndicator.setIndicatorStyle(.dark)
         FTIndicator.showNotification(with: #imageLiteral(resourceName: "TimeIcon"), title: hintTitle, message: hintSubtitle)
+    }
+    //MARK:静态tableview
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "staticTableViewController" && segue.destination .isKind(of: MenuController.self) {
+            
+        }
     }
 }
 

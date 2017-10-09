@@ -13,6 +13,7 @@ class ScanController: UIViewController {
 
     var isFlashOn = false
     @IBAction func flashBtnTap(_ sender: UIButton) {
+        turnTorch()
         isFlashOn = !isFlashOn
         if isFlashOn {
             flashBtn.setImage(#imageLiteral(resourceName: "手电筒_高亮"), for: .normal)
