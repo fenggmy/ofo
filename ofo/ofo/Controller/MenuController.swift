@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class MenuController: UITableViewController {
 
     //var staticTabelViewCon : MenuController
@@ -29,9 +28,12 @@ class MenuController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
     // MARK: - Table view data source
 
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
@@ -77,16 +79,18 @@ class MenuController: UITableViewController {
     }
     */
 
-    /*
+    
      // MARK: - Navigation
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     if segue.identifier == "staticTableViewController" && segue.destination .isKind(of: MenuController.self) {
-     
+        
+         if segue.identifier == "showTrivalView"  {
+            print("是的")
+         }
      }
-     }
-     */
+    
     
     
 

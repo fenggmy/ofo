@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import SWRevealViewController
 import FTIndicator
+import SWRevealViewController
 
-class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMapNaviWalkManagerDelegate {
+class DrawerViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMapNaviWalkManagerDelegate {
     var mapView : MAMapView!
     var search : AMapSearchAPI!
     var pin : MyPinAnnotation!
@@ -18,8 +18,6 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     var nearBySearch = true
     var start,end : CLLocationCoordinate2D!
     var walkManager : AMapNaviWalkManager!
-    
-    
     
     @IBOutlet weak var panelView: UIView!
     @IBAction func locationBtnTap(_ sender: UIButton) {
@@ -69,16 +67,15 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         if let revealVC = revealViewController() {
-            
-            revealVC.rearViewRevealWidth = self.view.bounds.width * 0.85
-            
+            revealVC.rearViewRevealWidth = self.view.bounds.width * 0.8
             navigationItem.leftBarButtonItem?.target = revealVC
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
             view.addGestureRecognizer(revealVC.panGestureRecognizer())
+            view.addGestureRecognizer(revealVC.tapGestureRecognizer())
             
         }
     }
-
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -310,9 +307,9 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     }
     //MARK:静态tableview
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "staticTableViewController" && segue.destination .isKind(of: MenuController.self) {
-            
-        }
+//        if segue.identifier == "staticTableViewController" && segue.destination .isKind(of: MenuController.self) {
+//
+//        }
     }
 }
 

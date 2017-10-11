@@ -1,20 +1,19 @@
 //
-//  sideBarController.swift
+//  SideBar_wallet.swift
 //  ofo
 //
-//  Created by 马异峰 on 2017/10/9.
+//  Created by 马异峰 on 2017/10/11.
 //  Copyright © 2017年 Yifeng. All rights reserved.
 //
 
 import UIKit
 
-class sideBarController: UIViewController {
+class SideBar_wallet: UIViewController {
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        title = "我的钱包"
     }
 
     override func didReceiveMemoryWarning() {

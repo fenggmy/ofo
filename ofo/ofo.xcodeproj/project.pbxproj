@@ -13,10 +13,14 @@
 		991F84A71F8A62C0006648AF /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991F84A61F8A62C0006648AF /* ErrorViewController.swift */; };
 		9965677A1F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 996567791F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx */; };
 		9965677C1F87C059003BCF68 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */; };
-		99889C541F8B6B8800930272 /* sideBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99889C531F8B6B8800930272 /* sideBarController.swift */; };
+		99889C5B1F8C778300930272 /* SideBar_trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99889C591F8C70D700930272 /* SideBar_trip.swift */; };
+		99889C8E1F8E186100930272 /* SideBar_invite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99889C8D1F8E186100930272 /* SideBar_invite.swift */; };
+		99889C901F8E18B000930272 /* SideBar_wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99889C8F1F8E18B000930272 /* SideBar_wallet.swift */; };
+		99889C921F8E18E000930272 /* SideBar_coupon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99889C911F8E18E000930272 /* SideBar_coupon.swift */; };
+		99889C941F8E190600930272 /* SideBar_guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99889C931F8E190600930272 /* SideBar_guide.swift */; };
 		99BB03051F89037B004EE858 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03041F89037B004EE858 /* ColorTools.swift */; };
 		99BB030C1F892019004EE858 /* InputNumController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03071F8918DF004EE858 /* InputNumController.swift */; };
-		99BB030F1F892019004EE858 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB030A1F8918DF004EE858 /* ViewController.swift */; };
+		99BB030F1F892019004EE858 /* DrawerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB030A1F8918DF004EE858 /* DrawerViewController.swift */; };
 		99BB03181F892D44004EE858 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03161F892D23004EE858 /* WebViewController.swift */; };
 		99BB031A1F892D44004EE858 /* ScanController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03141F892D23004EE858 /* ScanController.swift */; };
 		99BB031B1F892D44004EE858 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99BB03131F892D23004EE858 /* MenuController.swift */; };
@@ -48,10 +52,14 @@
 		991F84A61F8A62C0006648AF /* ErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
 		996567791F87AFF7003BCF68 /* 中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "中国重庆市渝中区400010解放碑商圈新华路222号 邮政编码- 400010.gpx"; sourceTree = "<group>"; };
 		9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
-		99889C531F8B6B8800930272 /* sideBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarController.swift; sourceTree = "<group>"; };
+		99889C591F8C70D700930272 /* SideBar_trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar_trip.swift; sourceTree = "<group>"; };
+		99889C8D1F8E186100930272 /* SideBar_invite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar_invite.swift; sourceTree = "<group>"; };
+		99889C8F1F8E18B000930272 /* SideBar_wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar_wallet.swift; sourceTree = "<group>"; };
+		99889C911F8E18E000930272 /* SideBar_coupon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar_coupon.swift; sourceTree = "<group>"; };
+		99889C931F8E190600930272 /* SideBar_guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideBar_guide.swift; sourceTree = "<group>"; };
 		99BB03041F89037B004EE858 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 		99BB03071F8918DF004EE858 /* InputNumController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNumController.swift; sourceTree = "<group>"; };
-		99BB030A1F8918DF004EE858 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		99BB030A1F8918DF004EE858 /* DrawerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawerViewController.swift; sourceTree = "<group>"; };
 		99BB03131F892D23004EE858 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		99BB03141F892D23004EE858 /* ScanController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanController.swift; sourceTree = "<group>"; };
 		99BB03161F892D23004EE858 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +110,61 @@
 			path = voice;
 			sourceTree = "<group>";
 		};
+		99889C571F8C70D700930272 /* SideBarController */ = {
+			isa = PBXGroup;
+			children = (
+				99889C591F8C70D700930272 /* SideBar_trip.swift */,
+				99889C8D1F8E186100930272 /* SideBar_invite.swift */,
+				99889C8F1F8E18B000930272 /* SideBar_wallet.swift */,
+				99889C911F8E18E000930272 /* SideBar_coupon.swift */,
+				99889C931F8E190600930272 /* SideBar_guide.swift */,
+			);
+			path = SideBarController;
+			sourceTree = "<group>";
+		};
+		99889C951F8E1E0B00930272 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99BB031C1F893D50004EE858 /* disPlayController.swift */,
+				99BB030A1F8918DF004EE858 /* DrawerViewController.swift */,
+				991F84A61F8A62C0006648AF /* ErrorViewController.swift */,
+				99BB03071F8918DF004EE858 /* InputNumController.swift */,
+				99BB03131F892D23004EE858 /* MenuController.swift */,
+				99BB03141F892D23004EE858 /* ScanController.swift */,
+				99BB03161F892D23004EE858 /* WebViewController.swift */,
+				99889C571F8C70D700930272 /* SideBarController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99889C961F8E1E9100930272 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				99BB03041F89037B004EE858 /* ColorTools.swift */,
+				991F84A41F8A410D006648AF /* NetworkTools.swift */,
+				991F84901F89D852006648AF /* UIViewTools.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		99889C971F8E1EE400930272 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				99E898691F8690DE006E6F77 /* LaunchScreen.storyboard */,
+				99E898841F877ADD006E6F77 /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		99889C981F8E1F0500930272 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				99E898601F8690DE006E6F77 /* AppDelegate.swift */,
+				9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		99E898541F8690DE006E6F77 = {
 			isa = PBXGroup;
 			children = (
@@ -124,25 +187,14 @@
 		99E8985F1F8690DE006E6F77 /* ofo */ = {
 			isa = PBXGroup;
 			children = (
+				99E898671F8690DE006E6F77 /* Assets.xcassets */,
 				99E898791F875564006E6F77 /* ofo-Bridging-Header.h */,
 				99E8986C1F8690DE006E6F77 /* Info.plist */,
-				99E898601F8690DE006E6F77 /* AppDelegate.swift */,
-				99BB03041F89037B004EE858 /* ColorTools.swift */,
-				991F84A41F8A410D006648AF /* NetworkTools.swift */,
-				991F84901F89D852006648AF /* UIViewTools.swift */,
-				99BB03071F8918DF004EE858 /* InputNumController.swift */,
-				99BB03131F892D23004EE858 /* MenuController.swift */,
-				99BB031C1F893D50004EE858 /* disPlayController.swift */,
-				99889C531F8B6B8800930272 /* sideBarController.swift */,
-				991F84A61F8A62C0006648AF /* ErrorViewController.swift */,
-				99BB03141F892D23004EE858 /* ScanController.swift */,
-				99BB03161F892D23004EE858 /* WebViewController.swift */,
-				99BB030A1F8918DF004EE858 /* ViewController.swift */,
+				99889C951F8E1E0B00930272 /* Controller */,
+				99889C981F8E1F0500930272 /* Other */,
+				99889C971F8E1EE400930272 /* StoryBoard */,
+				99889C961F8E1E9100930272 /* Tools */,
 				991F84941F89EAAA006648AF /* voice */,
-				9965677B1F87C059003BCF68 /* MyPinAnnotation.swift */,
-				99E898671F8690DE006E6F77 /* Assets.xcassets */,
-				99E898691F8690DE006E6F77 /* LaunchScreen.storyboard */,
-				99E898841F877ADD006E6F77 /* Main.storyboard */,
 			);
 			path = ofo;
 			sourceTree = "<group>";
@@ -316,19 +368,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99889C941F8E190600930272 /* SideBar_guide.swift in Sources */,
 				991F84911F89D852006648AF /* UIViewTools.swift in Sources */,
+				99889C8E1F8E186100930272 /* SideBar_invite.swift in Sources */,
 				991F84A71F8A62C0006648AF /* ErrorViewController.swift in Sources */,
-				99889C541F8B6B8800930272 /* sideBarController.swift in Sources */,
 				991F84A51F8A410D006648AF /* NetworkTools.swift in Sources */,
 				9965677C1F87C059003BCF68 /* MyPinAnnotation.swift in Sources */,
 				99BB03181F892D44004EE858 /* WebViewController.swift in Sources */,
 				99BB031A1F892D44004EE858 /* ScanController.swift in Sources */,
 				99BB03051F89037B004EE858 /* ColorTools.swift in Sources */,
+				99889C901F8E18B000930272 /* SideBar_wallet.swift in Sources */,
 				99BB031D1F893D50004EE858 /* disPlayController.swift in Sources */,
 				99E898611F8690DE006E6F77 /* AppDelegate.swift in Sources */,
-				99BB030F1F892019004EE858 /* ViewController.swift in Sources */,
+				99BB030F1F892019004EE858 /* DrawerViewController.swift in Sources */,
+				99889C921F8E18E000930272 /* SideBar_coupon.swift in Sources */,
 				99BB030C1F892019004EE858 /* InputNumController.swift in Sources */,
 				99BB031B1F892D44004EE858 /* MenuController.swift in Sources */,
+				99889C5B1F8C778300930272 /* SideBar_trip.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
